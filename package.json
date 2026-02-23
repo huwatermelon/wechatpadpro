@@ -1,0 +1,29 @@
+{
+  "name": "@openclaw/wechatpadpro",
+  "version": "2026.2.20",
+  "description": "OpenClaw WeChatPadPro channel plugin",
+  "type": "module",
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "openclaw": ">=2026.2.0"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.2.0"
+  },
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "channel": {
+      "id": "wechatpadpro",
+      "label": "WeChatPadPro",
+      "selectionLabel": "WeChatPadPro (861 server)",
+      "docsPath": "/channels/wechatpadpro",
+      "docsLabel": "wechatpadpro",
+      "blurb": "WeChat integration via WeChatPadPro 861 server.",
+      "aliases": ["wxp", "wechat861"],
+      "order": 70,
+      "quickstartAllowFrom": true
+    }
+  }
+}
